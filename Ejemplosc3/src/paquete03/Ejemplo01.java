@@ -17,6 +17,7 @@ public class Ejemplo01 {
         {7, 9.4, 10, 9}};
         String[] nombresEstudiante = {"Jose A", "Elena J", "Paúl L"};
         double[] sumaNotas = new double[3];
+        double[] promedio = new double[3];
         String[] promedioNotasCualitativas = new String[3];
         // 0 - 5.9 Bueno
         // 6 - 8.9 Muy Bueno
@@ -36,14 +37,14 @@ public class Ejemplo01 {
                 // 26 + notas[0][3] // 26 + 8 // 34
             }
             sumaNotas[i] = suma;
-            double promedio = suma / 4;
-            if (promedio >= 0 && promedio <= 5.9) {
+            promedio[i] = suma / 4;
+            if (promedio[i] >= 0 && promedio[i] <= 5.9) {
                 promedioNotasCualitativas[i] = "bueno";
             } else {
-                if (promedio >= 6 && promedio <= 8.9) {
-                    promedioNotasCualitativas[i] = "Muy bueno";
+                if (promedio[i] >= 6 && promedio[i] <= 8.9) {
+                    promedioNotasCualitativas[i] = "muy bueno";
                 } else {
-                    if (promedio >= 9 && promedio <= 10) {
+                    if (promedio[i] >= 9 && promedio[i] <= 10) {
                         promedioNotasCualitativas[i] = "excelente";
                     }
                 }
