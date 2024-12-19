@@ -27,7 +27,7 @@ public class Ejemplo05 {
         for (int fila = 0; fila < arreglo1.length; fila++) {
             for (int col = 0; col < arreglo1[fila].length; col++) {
                 valor = arreglo1[fila][col]; 
-                if (valor%2==0){
+                if (valor==0){
                     suma = suma + valor;
                 }
                 
